@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fypAppBackend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_REPO
+        value: JunaidKhanNiazii/faces
+      - key: groqApi
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false

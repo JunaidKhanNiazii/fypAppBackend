@@ -30,3 +30,4 @@ lerna-debug.log*
 # OS related files
 Thumbs.db
 db.json
+firebase.json
